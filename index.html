@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manushree Cleaning Product Suppliers</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-header">
+    <img src="images/logo.png" class="logo">
+    <div>
+        <h1 id="title">Manushree Cleaning Product Suppliers</h1>
+        <p id="subtitle">Quality Home & Cleaning Products</p>
+    </div>
+    <div class="lang-switch">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('mr')">मराठी</button>
+    </div>
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+    <img src="images/banner.png" alt="Banner">
+</section>
+
+<!-- CONTACT -->
+<section class="contact-info">
+    <p>📍 Dattakrupa Colony, Near Indu Surgicare Hospital, Pune – 411033</p>
+    <p>📞 WhatsApp: +91 9767137660</p>
+</section>
+
+<!-- CATEGORY: CLEANING -->
+<h2 class="category">🧼 Cleaning Products</h2>
+<section class="products">
+    <div class="product-card">
+        <img src="images/detergent.jpg">
+        <h3>Detergent Powder</h3>
+        <p>₹120</p>
+        <input type="number" min="1" value="1" id="q1">
+        <button onclick="addToCart('Detergent Powder',120,'q1')">Add</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/floor-cleaner.jpg">
+        <h3>Floor Cleaner</h3>
+        <p>₹150</p>
+        <input type="number" min="1" value="1" id="q2">
+        <button onclick="addToCart('Floor Cleaner',150,'q2')">Add</button>
+    </div>
+</section>
+
+<!-- CATEGORY: DAILY USE -->
+<h2 class="category">🛒 Daily Use</h2>
+<section class="products">
+    <div class="product-card">
+        <img src="images/soap.jpg">
+        <h3>Soap</h3>
+        <p>₹40</p>
+        <input type="number" min="1" value="1" id="q3">
+        <button onclick="addToCart('Soap',40,'q3')">Add</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/tea.jpg">
+        <h3>Tea Powder</h3>
+        <p>₹250</p>
+        <input type="number" min="1" value="1" id="q4">
+        <button onclick="addToCart('Tea Powder',250,'q4')">Add</button>
+    </div>
+</section>
+
+<!-- CART -->
+<section class="cart">
+    <h2 id="cartTitle">Cart</h2>
+    <ul id="cartItems"></ul>
+    <h3 id="total">Total: ₹0</h3>
+    <button class="checkout" onclick="checkout()">Order on WhatsApp</button>
+</section>
+
+<footer>
+    © 2025 Manushree Cleaning Product Suppliers
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
